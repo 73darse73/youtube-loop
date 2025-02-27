@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- jsで↓をiframeタグにする -->
+        <header>
+            <p class="icon img"><img src="./images/icon.png" alt="youtubeのロゴ"></p>
+            <h1 class="title">YOUTUBE-LOOP</h1>
+        </header>
+        <div class="set">
+            <div class="player" id="player"></div>
+            <div class="contents">
+                <div class="text_box">
+                    <p>動画のURLを入れてください。</p>
+                    <input type="text" class="text" id="text">
+                </div>
+                <div class="start_box">
+                    <p>開始時間を入力してください。</p>
+                    <input type="text" class="start" id="start">
+                </div>
+                <div class="end_box">
+                    <p>終了時間を入力してください。</p>
+                    <input type="text" class="end" id="end">
+                </div>
+                <button id="decision">実行</button>
+                <button id="add">追加</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
